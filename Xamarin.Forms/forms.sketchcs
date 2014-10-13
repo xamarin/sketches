@@ -28,11 +28,11 @@ var data = new List<Tuple<ImageSource, string, string>> {
 	Tuple.Create (
 		CreateImageSource ("1s07h2W.png"),
 		"Miguel",
-		"CTO and Co-founder"),
+		"CTO and Co-flounder"),
 	Tuple.Create (
 		CreateImageSource ("1rYGvGU.png"),
 		"Nat",
-		"CEO and Co-founder"),
+		"CEO and Co-flounder"),
 	Tuple.Create (
 		CreateImageSource ("1EhFsao.png"),
 		"Stephanie",
@@ -44,7 +44,7 @@ var data = new List<Tuple<ImageSource, string, string>> {
 	Tuple.Create (
 		CreateImageSource ("10CbVZE.png"),
 		"Joseph",
-		"Director of Developer Relations and Co-founder"),
+		"Director of Developer Relations and Co-flounder"),
 	Tuple.Create (
 		CreateImageSource ("1vCRbKh.jpg"),
 		"Rob",
