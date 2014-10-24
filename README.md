@@ -38,7 +38,7 @@ you have a couple of options:
 Modifying Live UI
 -----------------
 
-Please see [the documentation](http://staging-docs.xamarin.com/guides/cross-platform/sketches/walkthrough/)
+Please see [the documentation](http://developer.xamarin.com/guides/cross-platform/sketches/)
 for some examples. Sketches work by evaluating your code live in an "agent" app
 running on the target platform. Each app provides its own way to modify the UI:
 
