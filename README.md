@@ -49,8 +49,9 @@ running on the target platform. Each app provides its own way to modify the UI:
   main page of the app. You can add new Pages to `RootPage.Children`.
 * Android (Android): A `RootActivity` static property is exposed to your Sketch.
   This represents the agent's running Activity.
-* Mac: Not supported. You can create your own `NSWindow` but the agent does not
-  clean up old window instances.
+* Mac: A `RootWindow` static property is exposed to your Sketch. When accessed,
+  an NSWindow will be created that lets you add views like
+  `RootWindow.ContentView.AddSubView(...)`.
 
 For Android (Android), the following convenience method is provided:
 
