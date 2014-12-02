@@ -23,17 +23,21 @@ file system.
 Loading Resources
 -----------------
 
-The ability to embed resources into your Sketch is not yet supported. For now,
-you have a couple of options:
+You can bundle resources into your sketch, but there is currently no UI for it.
 
-1. On iOS or Mac, simply provide absolute paths to the resources you want to
-   load. On Android, use `adb push` to copy resources onto the `/sdcard/`.
+Create a folder next to your sketch file with a name like
+"mysketch.sketchcs.Resources", and any files placed within will be available
+for use in your code.
 
-2. Open a terminal, and `cd` to the directory that contains your resources.
-   Then run `python -m SimpleHTTPServer 8000` to start a local HTTP server.
-   Then in your Sketch, call `CreateLocalUri (relativePathToResource)` to get
-   a `System.Uri` for the resource. This method accepts optional `host` and
-   `port` arguments.
+On iOS and Mac, they can be accessed through `NSBundle.MainBundle`, so you can
+use API like `NSImage.ImageNamed(resourceName)` and
+`UIImage.FromBundle(resourceName)`.
+
+There is also a more general method available on all platforms called
+`GetResourcePath(resourceName)`. This is currently the only way to get access
+to bundled resources on Android.
+
+See the samples in this repository for working examples.
 
 Modifying Live UI
 -----------------

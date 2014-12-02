@@ -1,9 +1,9 @@
 Slappy Salmon
 =============
 
-This iOS (Unified) Sketch demonstrates live native UI development. You will
-want to change the path to `salmarin.jpg`, or run a local HTTP server and
-access it using `CreateLocalUri` (see top-level README.md).
+This iOS (Unified) Sketch demonstrates live native UI development.
+
+Note that the bundled salmon image is loaded using `UIImage.FromBundle ("salmarin.jpg")`.
 
 Credits
 -------
