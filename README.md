@@ -68,4 +68,5 @@ For Android (Android), the following convenience method is provided:
 Reporting Issues
 ----------------
 
-Please report issues in [Xamarin bugzilla](https://bugzilla.xamarin.com/enter_bug.cgi?product=Xamarin%20Studio&component=Sketches).
+Please report issues in [Xamarin bugzilla](https://bugzilla.xamarin.com/enter_bug.cgi?product=Xamarin%20Studio&component=Sketches),
+or stop by [our forums](http://forums.xamarin.com/categories/sketches).
