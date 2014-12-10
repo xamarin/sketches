@@ -46,18 +46,18 @@ Please see [the documentation](http://developer.xamarin.com/guides/cross-platfor
 for some examples. Sketches work by evaluating your code live in an "agent" app
 running on the target platform. Each app provides its own way to modify the UI:
 
-* iOS (Unified): A `RootView` static property is exposed to your Sketch. This
+* Xamarin.iOS: A `RootView` static property is exposed to your Sketch. This
   is the UIView of the main UIViewController.
-* iOS (Classic) and Android (Xamarin.Forms): A `RootPage` static property is
+* Xamarin.Forms (iOS and Android): A `RootPage` static property is
   exposed to your Sketch. This is a `Xamarin.Forms.TabbedPage` that is the
   main page of the app. You can add new Pages to `RootPage.Children`.
-* Android (Android): A `RootActivity` static property is exposed to your Sketch.
+* Xamarin.Android: A `RootActivity` static property is exposed to your Sketch.
   This represents the agent's running Activity.
-* Mac: A `RootWindow` static property is exposed to your Sketch. When accessed,
+* Xamarin.Mac: A `RootWindow` static property is exposed to your Sketch. When accessed,
   an NSWindow will be created that lets you add views like
   `RootWindow.ContentView.AddSubView(...)`.
 
-For Android (Android), the following convenience method is provided:
+For Xamarin.Android, the following convenience method is provided:
 
 	public static int DimToPixels (int dip, Android.Util.ComplexUnitType type = Android.Util.ComplexUnitType.Dip)
 	{
