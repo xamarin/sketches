@@ -16,9 +16,9 @@ Loading Projects or Third-Party Assemblies
 -----------------------------------------
 
 Call `LoadAssembly (pathToAssembly)` to bring any arbitrary library into
-the Sketch runtime. Keep in mind that this code runs on the target platform,
-so if you're on Android, the path should point to a file on the emulator's
-file system.
+the Sketch runtime. It is recommended to add the DLL as a resource to your
+sketch (see below), in which case you would call
+`LoadAssembly (GetResourcePath ("some.dll"))`.
 
 Loading Resources
 -----------------
